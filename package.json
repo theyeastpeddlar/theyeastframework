@@ -1,0 +1,31 @@
+{
+  "name": "the-yeast-framework",
+  "version": "0.0.1",
+  "description": "The Yeast Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/bigspring/team-alphas-pattern-lab.git"
+  },
+  "keywords": [
+    "Atomic",
+    "Design",
+    "Pattern",
+    "Library",
+    "Patty",
+    "Lab"
+  ],
+  "author": "Team Alpha",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/bigspring/team-alphas-pattern-lab#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "foundation-sites": "^6.5.0-rc.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "motion-ui": "^2.0.3"
+  }
+}

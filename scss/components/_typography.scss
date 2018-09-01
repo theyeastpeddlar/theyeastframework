@@ -1,0 +1,17 @@
+/// Styles for headings at various screen sizes. Each key is a breakpoint, and each value is a map of heading styles.
+/// @type Map
+$header-styles: (
+	h1: 40px,
+	h2: 30px,
+	h3: 24px,
+	h4: 18px,
+	h5: 17px,
+	h6: 16px
+) !default;
+
+/* For each key in the map, created an own class */
+@each $name, $value in $header-styles {
+	#{$name} {
+	  font-size: $value;
+	}
+ }

@@ -1,0 +1,27 @@
+.button {
+	background-color: $button-background;
+	border-color: $button-background;
+	color: $button-color;
+	margin: $button-margin;
+	cursor: pointer;
+	font-size: $button-font-size;
+	padding: $button-padding;
+	transition: $button-transition;
+
+	&:hover {
+		background-color: $button-background-hover;
+	}
+}
+
+.button--secondary {
+	background-color: $button-secondary-background;
+	border-color: $button-secondary-background;
+
+	&:hover {
+		background-color: $button-secondary-background-hover;
+	}
+}
+
+.button--expanded {
+	width: 100%;
+}

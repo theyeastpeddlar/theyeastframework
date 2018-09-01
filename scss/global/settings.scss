@@ -1,0 +1,78 @@
+//  Table of Contents:
+//
+//   1. Global
+//   2. Grid
+//   3. Buttons
+//   4. Typography
+
+// 1. Global
+// ---------
+$global-font-size: 100%;
+$global-width: rem-calc(1140);
+$global-lineheight: 1.5;
+
+$primary-color: #FA8072;
+$secondary-color: #6495ED;
+$tertiary-color: #778899;
+$light-gray: #F5F5F5;
+$medium-gray: #C0C0C0;
+$dark-gray: #696969;
+$white: #ffffff;
+$black: #000000;
+
+$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$body-antialiased: true;
+$global-margin: 1rem;
+$global-padding: 1rem;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$global-radius: 5px;
+$global-text-direction: ltr;
+
+$breakpoints: (
+   small: 0px,
+   medium: 640px,
+   large: 1024px,
+   xlarge: 1366px,
+   xxlarge: 1920px,
+);
+
+// 2. Grid
+// ---------
+$grid-columns: 12;
+$global-grid-gap: $global-margin;
+
+// 3. Buttons
+// ---------
+$button-color: $white;
+$button-background: $primary-color;
+$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-font-size: 1rem !default;
+$button-margin: 0 0 $global-margin 0;
+$button-padding: 0.85em 1em;
+$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+
+$button-secondary-color: $white;
+$button-secondary-background: $secondary-color;
+$button-secondary-background-hover: scale-color($button-secondary-background, $lightness: -15%);
+
+// 4. Typography
+// ---------
+// $header-styles: (
+//   small: (
+//     'h1': ('font-size': 36),
+//     'h2': ('font-size': 28),
+//     'h3': ('font-size': 23),
+//     'h4': ('font-size': 18),
+//     'h5': ('font-size': 16),
+//     'h6': ('font-size': 14),
+//   ),
+//   medium: (
+//     'h1': ('font-size': 54),
+//     'h2': ('font-size': 38),
+//     'h3': ('font-size': 28),
+//     'h4': ('font-size': 20),
+//     'h5': ('font-size': 18),
+//     'h6': ('font-size': 16),
+//   ),
+// );

@@ -1,0 +1,59 @@
+// ============================================================
+// For browsers that supports grid engage the thrusters
+// ============================================================
+
+.grid-container {
+   margin-left: auto;
+   margin-right: auto;
+   max-width: $global-width;
+   padding: 0 $global-padding;
+}
+
+// make grid-x display: grid
+.grid-row {
+   display: grid;
+   grid-gap: $global-grid-gap;
+   grid-template-columns: repeat(12, 1fr);
+   margin-bottom: $global-margin;
+   width: 100%;
+
+   &:after {
+      content: none;
+   }
+}
+
+// cells need to be full width unless specified by a small-, medium, large- rule
+.grid-cell {
+   grid-column: span 12;
+}
+
+// make sure cells take up the full width
+.grid-row .grid-cell {
+   max-width: 100%;
+   padding: 0;
+   width: 100%;
+}
+
+// ================================
+// mixin for generating the cells
+// ================================
+@mixin grid-columns-generator($class-name) {
+   $i: 1;
+   @while $i <= $grid-columns {
+   .#{$class-name}#{$i} {
+      grid-column: span $i;
+   }
+
+   $i: $i + 1;
+   }
+}
+
+@include grid-columns-generator("small-");
+
+@media ( min-width: map-get( $breakpoints, medium ) ) {
+   @include grid-columns-generator("medium-");
+}
+
+@media ( min-width: map-get( $breakpoints, large ) ) {
+   @include grid-columns-generator("large-");
+}
