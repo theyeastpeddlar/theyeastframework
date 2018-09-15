@@ -1,9 +1,11 @@
 .button {
 	background-color: $button-background;
 	border-color: $button-background;
+	border-radius: $global-radius;
 	color: $button-color;
 	margin: $button-margin;
 	cursor: pointer;
+	font-family: $body-font-family;
 	font-size: $button-font-size;
 	padding: $button-padding;
 	transition: $button-transition;

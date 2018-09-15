@@ -10,26 +10,23 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1140);
 $global-lineheight: 1.5;
-
-$primary-color: red;
-$secondary-color: #6495ED;
-$tertiary-color: #778899;
+$primary-color: #EE6C4D;
+$secondary-color: #70AE6E;
+$tertiary-color: #5171A5;
 $light-gray: #F5F5F5;
 $medium-gray: #C0C0C0;
-$dark-gray: #555555;
+$dark-gray: #333333;
 $white: #ffffff;
 $black: #000000;
 
-@import url('https://fonts.googleapis.com/css?family=Heebo|Open+Sans:400|Questrial');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:400');
 $body-font-family: 'Open Sans', sans-serif;
-$body-antialiased: true;
+$body-font-color: $dark-gray;
 $global-margin: 1rem;
 $global-padding: 1rem;
-$global-font-color: $dark-gray;
 $global-weight-normal: 400;
-$global-weight-bold: bold;
-$global-radius: 5px;
-$global-text-direction: ltr;
+$global-weight-bold: 600;
+$global-radius: 3px;
 
 $breakpoints: (
    small: 0px,
@@ -61,8 +58,9 @@ $button-secondary-background-hover: scale-color($button-secondary-background, $l
 // 4. Typography
 // ---------
 
-$header-font-family: 'Questrial', sans-serif;
+$header-font-family: 'Montserrat', sans-serif;
 $header-font-weight: $global-weight-bold;
+$header-font-color: $body-font-color;
 $header-margin-top: 1em;
 $header-margin-bottom: 1rem;
 

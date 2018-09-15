@@ -5,20 +5,30 @@
  * Licensed under MIT Open Source
  */
 
-// Global styles 
-@import "core/scss/global/normalize";
-@import "core/scss/global/mixins";
-@import "core/scss/global/typography-scale";
 
-@import "core/scss/global/settings";
 
-// Modules
-@import "core/scss/modules/grid";
+// Global core styles 
+// THE CORE YEAST FRAMEWORK SETTINGS
+@import "scss/core-styles/global/settings"; 
 
-// Individual components
-@import "core/scss/components/typography";
-@import "core/scss/components/buttons";
-@import "core/scss/components/callout";
+// Global project styles
+// OVERRIDE THE CORE SETTINGS FOR THE PROJECT
+//@import "scss/site-styles/global/settings";
 
-// Override styles
-@import "scss/global/settings";
+// Core mixins and base styles
+@import "scss/core-styles/global/normalize";
+@import "scss/core-styles/global/utilities";
+@import "scss/core-styles/global/mixins";
+@import "scss/core-styles/global/typography-scale";
+
+// Core Modules
+@import "scss/core-styles/modules/grid";
+
+// Core Individual components
+@import "scss/core-styles/components/typography";
+@import "scss/core-styles/components/buttons";
+@import "scss/core-styles/components/callout";
+
+// ---------------
+// Project styles
+// ---------------

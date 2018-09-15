@@ -11,7 +11,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1140);
 $global-lineheight: 1.5;
 
-$primary-color: #FA8072;
+$primary-color: orange;
 $secondary-color: #6495ED;
 $tertiary-color: #778899;
 $light-gray: #F5F5F5;
@@ -59,7 +59,7 @@ $button-secondary-background: $secondary-color;
 $button-secondary-background-hover: scale-color($button-secondary-background, $lightness: -15%);
 
 // 4. Typography
-// ---------
+// -------------
 
 $header-font-family: 'Questrial', sans-serif;
 $header-font-weight: $global-weight-bold;
@@ -107,3 +107,7 @@ $h5-font-sizes: (
   medium: 16px,
   large : 16px
 );
+
+// 5. Callout
+// -------------
+
