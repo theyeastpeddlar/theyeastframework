@@ -1,9 +1,34 @@
-@import "global/normalize";
-@import "global/mixins";
-@import "global/settings";
+/**
+ * The Yeast Framework by The Yeast Peddlar
+ * Version 0.0.1
+ * simonpmiles.co.uk
+ * Licensed under MIT Open Source
+ */
 
-@import "modules/grid";
 
-@import "components/typography";
-@import "components/buttons";
-@import "components/callout";
+
+// Global core styles 
+// THE CORE YEAST FRAMEWORK SETTINGS
+@import "scss/core-styles/global/settings"; 
+
+// Global project styles
+// OVERRIDE THE CORE SETTINGS FOR THE PROJECT
+//@import "scss/site-styles/global/settings";
+
+// Core mixins and base styles
+@import "scss/core-styles/global/normalize";
+@import "scss/core-styles/global/utilities";
+@import "scss/core-styles/global/mixins";
+@import "scss/core-styles/global/typography-scale";
+
+// Core Modules
+@import "scss/core-styles/modules/grid";
+
+// Core Individual components
+@import "scss/core-styles/components/typography";
+@import "scss/core-styles/components/buttons";
+@import "scss/core-styles/components/callout";
+
+// ---------------
+// Project styles
+// ---------------

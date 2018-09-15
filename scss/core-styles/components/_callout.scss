@@ -1,0 +1,19 @@
+.callout {
+	background-color: $primary-color;
+	border-radius: $global-radius;
+	padding: $global-padding;
+
+	> * {
+		color: white;
+	}
+
+	&--secondary {
+	background-color: $tertiary-color;
+	}
+
+	&--tertiary {
+	background-color: $tertiary-color;
+	}	 
+
+}
+

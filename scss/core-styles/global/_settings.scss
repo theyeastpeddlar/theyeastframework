@@ -1,0 +1,107 @@
+//  Table of Contents:
+//
+//   1. Global
+//   2. Grid
+//   3. Buttons
+//   4. Typography
+
+// 1. Global
+// ---------
+$global-font-size: 100%;
+$global-width: rem-calc(1140);
+$global-lineheight: 1.5;
+$primary-color: #EE6C4D;
+$secondary-color: #70AE6E;
+$tertiary-color: #5171A5;
+$light-gray: #F5F5F5;
+$medium-gray: #C0C0C0;
+$dark-gray: #333333;
+$white: #ffffff;
+$black: #000000;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:400');
+$body-font-family: 'Open Sans', sans-serif;
+$body-font-color: $dark-gray;
+$global-margin: 1rem;
+$global-padding: 1rem;
+$global-weight-normal: 400;
+$global-weight-bold: 600;
+$global-radius: 3px;
+
+$breakpoints: (
+   small: 0px,
+   medium: 640px,
+   large: 1024px,
+   xlarge: 1366px,
+   xxlarge: 1920px,
+);
+
+// 2. Grid
+// ---------
+$grid-columns: 12;
+$global-grid-gap: $global-margin;
+
+// 3. Buttons
+// ---------
+$button-color: $white;
+$button-background: $primary-color;
+$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-font-size: 1rem !default;
+$button-margin: 0 0 $global-margin 0;
+$button-padding: 0.85em 1em;
+$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+
+$button-secondary-color: $white;
+$button-secondary-background: $secondary-color;
+$button-secondary-background-hover: scale-color($button-secondary-background, $lightness: -15%);
+
+// 4. Typography
+// ---------
+
+$header-font-family: 'Montserrat', sans-serif;
+$header-font-weight: $global-weight-bold;
+$header-font-color: $body-font-color;
+$header-margin-top: 1em;
+$header-margin-bottom: 1rem;
+
+$p-font-sizes: (
+  null  : 16px,
+  small : 16px,
+  medium: 16px,
+  large : 16px
+);
+
+$h1-font-sizes: (
+  null  : 32px,
+  small : 32px,
+  medium: 40px,
+  large : 48px
+);
+
+$h2-font-sizes: (
+  null  : 26px,
+  small : 26px,
+  medium: 32px,
+  large : 36px
+);
+
+$h3-font-sizes: (
+  null  : 22px,
+  small : 22px,
+  medium: 24px,
+  large : 28px
+);
+
+$h4-font-sizes: (
+  null  : 18px,
+  small : 18px,
+  medium: 18px,
+  large : 18px
+);
+
+$h5-font-sizes: (
+  null  : 16px,
+  small : 16px,
+  medium: 16px,
+  large : 16px
+);

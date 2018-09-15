@@ -1,0 +1,39 @@
+h1 {
+	@include font-size($h1-font-sizes);
+}
+
+h2 {
+	@include font-size($h2-font-sizes);
+}
+
+h3 {
+	@include font-size($h3-font-sizes);
+}
+
+h4 {
+	@include font-size($h4-font-sizes);
+}
+
+h5 {
+	@include font-size($h5-font-sizes);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $header-font-color;
+  font-family: $header-font-family;
+  margin-top: $header-margin-top;
+  margin-bottom: $header-margin-bottom;
+}
+
+p {
+  font-family: $body-font-family;
+  margin-top: 0;
+}
+
+p.lead {
+  font-size: rem-calc(20);
+}
+
+body {
+  color: $body-font-color;
+}
